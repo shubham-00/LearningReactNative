@@ -6,7 +6,9 @@ export default function App() {
 		<View style={styles.container}>
 			<View style={styles.container2}></View>
 			<View style={styles.container3}></View>
-			<Text>Open up App.js now</Text>
+			<Text>
+				Hello <Text style={styles.text2}>World</Text>
+			</Text>
 			<StatusBar style='auto' />
 		</View>
 	);
@@ -16,6 +18,7 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: '#fff',
+		paddingTop: 35,
 		// alignItems: 'center',
 		// justifyContent: 'center',
 	},
@@ -28,5 +31,8 @@ const styles = StyleSheet.create({
 		height: 100,
 		width: 100,
 		backgroundColor: 'lightgreen',
+	},
+	text2: {
+		color: 'pink',
 	},
 });

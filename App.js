@@ -5,6 +5,7 @@ import {
 	Image,
 	ImageBackground,
 	ScrollView,
+	Button,
 } from 'react-native';
 
 const logoImage = require('./assets/adaptive-icon.png');
@@ -13,6 +14,16 @@ export default function App() {
 	return (
 		<View style={{ ...styles.container, padding: 50 }}>
 			<ScrollView>
+				<View>
+					<Button
+						title='press'
+						color='midnightblue'
+						// disabled
+						onPress={() => {
+							console.log('button pressed');
+						}}
+					/>
+				</View>
 				<View style={styles.container2}></View>
 				<View style={styles.container3}></View>
 				<Text>
